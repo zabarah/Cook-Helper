@@ -12,8 +12,13 @@ public class Main3Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
     }
-    public void addbutton(View view){
-        Intent i = new Intent(Main3Activity.this, Main2Activity.class);
-        Main3Activity.this.startActivity(i);
+    public void openSearch(View view){
+        Intent search=new Intent(this,MainActivity.class);
+        startActivity(search);
+
+    }
+    public void add(View view){
+        Intent add=new Intent(this,Main2Activity.class);
+        startActivity(add);
     }
 }

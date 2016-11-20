@@ -20,10 +20,6 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
 
-<<<<<<< HEAD
-    Button backBtn=(Button)findViewById(R.id.backbtn);
-=======
->>>>>>> origin/master
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +69,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+    }
+    public void backToMain(View view){
+        Intent back=new Intent(this,Main3Activity.class);
+        startActivity(back);
+    }
+    public void viewPage(View view){
+        Intent viewPage=new Intent(this,Main4Activity.class);
+        startActivity(viewPage);
     }
 
 }
