@@ -62,6 +62,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        backBtn.setOnClickListener(new OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(MainActivity.this, Main3Activity.class));
+            }
+        });
+
+
     }
     public void backToMain(View view){
         Intent back=new Intent(this,Main3Activity.class);
